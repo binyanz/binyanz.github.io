@@ -1,79 +1,192 @@
 
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 
 <head>
-<title>Binyan Zhao first HTML page</title>
+	<title>Binyan Zhao's Home Page</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+	<link rel="stylesheet" href="./css/binyanz.css">
+
+
 </head>
 
 <body>
-<div id="container" style="width:1200px;background-color:#FFFFCC;">
 
-<div id="header" style="background-color:#FFFFCC;text-align:center;">
-<h1 style="margin-bottom:0;">Binyan Zhao (Jeniffer)</h1>
-<hr>
-</div>
+	<div class="header" style="text-align:center;">
+		<h1>Binyan Zhao (Jeniffer)</h1>
+	</div>
+	<div class="hr">
+	</div>
 
-<div id="menu" style="background-color:#FFCC99;height:600px;width:200px;float:left;">
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="education.html">Education</a></li>
-  <li><a href="research.html">Research & Publication</a></li>
-  <li><a href="intern.html" >Intern Experiences</a></li>
-  <li><a href="hobby.html">Hobby & Life</a></li>  
-</ul>
-</div>
-
-<div id="content_blank" style="background-color:#FFFFCC;height:600px;width:100px;float:left;">
-</div>
-
-<div style="float:left;width:263.1px;height:250px;">
-<img src="images/home1.jpg" alt="" width="263.1" height="250">
-</div>
-
-<div style="float:left;width:300px;height:240px;padding-left:10px">
-<address>
-<p style="font-size:100%;line-height:100%">
-Binyan Zhao (Jeniffer)
-<br/>
-PhD Candidate of Electrical and Computer Engineering Department of Uvic
-</p>
-<br/>
-<br/>
-<p style="font-size:100%;line-height:100%">
-Phone: (+1)(250)884-7378<br/>
-Email: <a href="mailto:zbytdd@gmail.com">zbytdd@gmail.com</a>
-</p>
-</address>
-</div>
+	<div class="sidebar">
+		<ul>
+			<li><a href="#" onclick="show('home')">Home</button></li>
+			<li><a href="#" onclick="show('education')">Education</button></li>
+			<li><a href="#" onclick="show('publication')">Research & Publication</button></li>
+			<li><a href="#" onclick="show('work')">Intern Experiences</button></li>
+			<li><a href="#" onclick="show('life')">Hobby & Life</button></li>  
+		</ul>
+	</div>
 
 
-<div id="content2" style="background-color:#FFFFCC;height:360px;width:700px;float:left;">
-<div style="float:left;width:100%">
+
+
+	<div class="content">
+		<div id="home">
+			<img src="images/home1.jpg" alt="" width="263.1" height="250">
+			<address>
+				<br/>
+				<br/>
+				<p>
+					Binyan Zhao (Jeniffer)
+					<br/>
+					PhD Candidate of Electrical and Computer Engineering Department of Uvic
+				</p>
+				<p >
+					Phone: (+1)(778)927-5388<br/>
+					Email: <a href="mailto:zbytdd@gmail.com">zbytdd@gmail.com</a>
+				</p>
+			</address>
+			<p>
+				Binyan Zhao (S'13) received the B.Eng. and M.Sc. degrees from <a href="http://english.bupt.edu.cn/" target="_blank"> Beijing University of Posts and 
+				Telecommunications </a>, 
+				Beijing, China in 2008.9 and 2011.3, respectively. 
+				She is currently working towards 
+				the Ph.D. degree at the Department of Electrical and Computer Engineering, <a href="http://www.uvic.ca/" target="_blank" >
+				University of Victoria </a>,  
+				Victoria, BC, Canada,
+				supervised by <a href="http://www.ece.uvic.ca/~xdong/" target="_blank"> Prof. Xiaodai Dong </a>, 
+				and co-supervised by <a href="http://www.ece.uvic.ca/~jbornema/" target="_blank"> Prof. Jens Bornemann </a>.
+			</p>
+		</div>
+		<div id="education" style="display:none;">
+			<p>
+				<dl>
+					<dt >2011.5-present <b>University of Victoria</b>                   </dt>
+					<dd> <i>PhD candidate in the Dept. of Electrical and Computer Engineering</i></dd>
+					<ul>
+						<li> Topic of Research: Optimization and Scheduling Problems in Smart Grid</li>
+					</ul>
+					<dt>2008.9-2011.3 <b>Beijing University of Posts and Telecommunications</b>           </dt>
+					<dd> <i>MASc in the Dept. of Signal Processing in Information and Telecommunications Engineering</i></dd>
+					<ul>
+						<li> GPA:86/100</li>
+					</ul>
+					<dt>2004.9-2008.8 <b>Beijing University of Posts and Telecommunications</b>         </dt>
+					<dd> <i>BSc in the Dept. of Information Engineering </i></dd>
+					<ul>
+						<li> Major in Information Security Engineering</li>  	
+						<li> GPA:84/100</li>  		
+					</ul>
+				</dl>
+			</p>
+		</div>
+		<div id="work" style="display:none;">
 <p>
-Binyan Zhao (S'13) received the B.Eng. and M.Sc. degrees from <a href="http://english.bupt.edu.cn/" target="_blank"> Beijing University of Posts and 
-Telecommunications </a>, 
-Beijing, China in 2008.9 and 2011.3, respectively. 
-She is currently working towards 
-the Ph.D. degree at the Department of Electrical and Computer Engineering, <a href="http://www.uvic.ca/" target="_blank" >
-University of Victoria </a>,  
-Victoria, BC, Canada,
-supervised by <a href="http://www.ece.uvic.ca/~xdong/" target="_blank"> Prof. Xiaodai Dong </a>, 
-and co-supervised by <a href="http://www.ece.uvic.ca/~jbornema/" target="_blank"> Prof. Jens Bornemann </a>.
+<dl>
+  <dt >2014.1-present <b> Testing Project for the communication availability of panel enclosure for Schneider Ltd.</b></dt>
+  <dd> <i>The objective of the testing project is to assess the availability of several low power wireless technologies, 
+  i.e., WiFi, Bluetooth, and Bluetooth Low Energy (BLE), in the short range communicating in the Panel Box. </i></dd>
+  	<ul>
+  		<li> First period: portable point-to-point testing with BLE;</li>
+  		<li> UDP/TCP communication with wifi module;</li> 
+  		<li> Design a graphic UI for the wifi communication with C/C++;</li>
+  		<li> Serial Port communications with bluetooth;</li> 		
+  	</ul>
+  <dt >2009.11-2010.11 <b> TD-LTE 1800 project and 230 project (Internship in Potevio Ltd. PRC)</b></dt>
+  <dd> <i>1800 project aims at developing an electrical communication system for State Grid Corporation of China, 
+  working on 1800MHz, implemented by DSP and FPGA. I completed several models in the company using C, 
+  Assembly Language: </i></dd>
+  	<ul>
+  		<li> determine the scaling schedule for the data flow in FFT and IFFT module by simulation. 
+  		The scaling schedule is an array of scale factors to be applied at the output of each stage of the FFT module 
+  		so as to avoid overflow or underflow while computing.</li>
+  		<li> Implementation, verification, and test of a synchronization module base on the received SNR data.</li> 	
+  	</ul>
+  <dd> <i>230 project aims at developing an LTE communication system with multi-core DSP devices, including the development 
+  	of both transmitter and receiver of eNodeB and UE. The project involves a complete development procedure including 
+  	algorithm design, float point and fix point simulation using C language, Assembly Language. Verification and integration 
+  	testing was on PicoTools 7.4.3 on Linux.</i></dd>
+  	<ul>
+  		<li> De-rate matching module : which is the reverse procedure of  the  rate  matching for turbo coded transport 
+  		channels as well as the convolution coded transport channels;</li>
+  		<li> HARQ module: which is inspired by ACK-NACK message to determine to do retransmission or not, based upon the 
+  		traditional Chase Combine technology; </li>
+  	</ul>
+  	<dt >2008.10-2009.10 <b> Research and Development of LTE system in the lab of the University</b></dt>
+  <dd> <i>This project intends to build up the LTE telecommunication system using DSP, I completed several models using 
+        C language, Assembly Language, and Matlab. </i></dd>
+  	<ul>
+  		<li> Pseudo- Random Sequence Generation engines; </li>
+  		<li> Design, implementation, verification, and test of FFT module with transforming length of 2048 and 4096 
+  		(including radix-2 and radix-4): particularly the 4096 FFT module used in PRACH channel detection, which is a 
+  		competitive challenge because of its high data speed requirements and limitation of available hardware source;</li> 
+  	</ul>
+  		 	
+</dl>
 </p>
-</div>
-</div>
+		</div>
+		<div id="publication" style="display:none;">
+		<p>
+<dl>
+  <dt >2011.5-present <b>Research Topics of the Optimization Problems on Smart Grid</b></dt>
+  <dd> <i>My research topic includes the pricing strategies for PHEV charging market based on 
+  the proposing charging service models, Unit commitment, power dispatching problems and service 
+  restoration problems in renewable-powered microgrid. </i></dd>
+  Publications:
+  	<ul>
+  		<li> "Short-term operation scheduling in renewable-powered microgrid: A duality-based approach", 
+  		IEEE Transactions on Sustainable Energy, Volume 5, Number 1, January, 2014.</li>
+  		<li> "Optimal strategies for PHEV battery charging in Smart Grid markets", Accepted by
+  		IEEE Transactions on Vehicular Technology.</li>  		
+  	</ul>
+  Submitted:
+  	<ul>
+  		<li> "Service Restoration for a Renewable-Powered Microgrid in Unscheduled
+  		Island Mode".</li>
+  	</ul>
+  		 	
+</dl>
+</p>
+		</div>
+		<div id="life" style="display:none;">
+		<p>
+	<dl>
+  	<dd> <i>In the spare time, I am very interested in some sports and outdoor activities. </i></dd>
+  		<ul>
+  			<li> swimming,jogging, biking, skiing,badminton, climbing mountains </li>
+  			<li> watching movies</li> 
+  		</ul>
+  <dd>	
+	</dl>
+</p>
+		</div>
+	</div>
 
-<div id="footer" style="background-color:#CCFFFF;clear:both;text-align:center;">
-Last updated in 2014.03.26</div>
-
-</div>
 
 
-<!--<a id="tips">Useful Tips Section</a>
-<a href="#tips">Visit the Useful Tips Section</a>-->
 
+
+
+
+
+	<!--<a id="tips">Useful Tips Section</a>
+	<a href="#tips">Visit the Useful Tips Section</a>-->
+
+	<script type="text/javascript" src="./js/binyanz.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 </body>
 </html>

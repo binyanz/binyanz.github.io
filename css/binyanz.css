@@ -1,0 +1,47 @@
+html, body {
+    height: 100%;
+}
+
+.header {
+	top:0;
+    left:0;
+    right:0;
+    position:absolute;
+	width: auto;
+	height: 78px;
+	background: #FFFFCC;
+}
+
+.hr {
+	top:78px;
+    left:0;
+    right:0;
+    position:absolute;
+	width: auto;
+	height: 2px;
+	background: LightGray;
+}
+
+.sidebar { 
+    top:80px;
+    left:0;
+    bottom:0;
+    position:absolute;
+    width: 220px;
+    height: auto;
+    padding: 10px;
+    background: #FFCC99;
+}
+
+.content {
+	top:80px;
+    left:220px;
+    right:0px;
+    bottom:0;
+    position:absolute;
+    width: auto;
+    height: auto;
+    padding:20px;
+    padding-left:20px;
+    background: #FFFFCC;
+}

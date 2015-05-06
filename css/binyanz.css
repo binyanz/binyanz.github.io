@@ -1,32 +1,35 @@
 html, body {
     height: 100%;
+    background: #FFFFCC;
 }
 
 .header {
 	top:0;
     left:0;
     right:0;
-    position:absolute;
+    position:fixed;
 	width: auto;
 	height: 78px;
 	background: #FFFFCC;
+	z-index: 2;
 }
 
 .hr {
 	top:78px;
     left:0;
     right:0;
-    position:absolute;
+    position:fixed;
 	width: auto;
 	height: 2px;
 	background: LightGray;
+	z-index: 2;
 }
 
 .sidebar { 
     top:80px;
     left:0;
     bottom:0;
-    position:absolute;
+    position:fixed;
     width: 220px;
     height: auto;
     padding: 10px;
@@ -43,5 +46,4 @@ html, body {
     height: auto;
     padding:20px;
     padding-left:20px;
-    background: #FFFFCC;
 }
